@@ -1,0 +1,112 @@
+PODS:
+  - Action (3.5.0):
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - Alamofire (4.6.0)
+  - Differentiator (3.0.2)
+  - ESTabBarController-swift (2.5)
+  - FoldingCell (3.0.1)
+  - Moya (10.0.2):
+    - Moya/Core (= 10.0.2)
+  - Moya-ObjectMapper/Core (2.5):
+    - Moya (~> 10.0)
+    - ObjectMapper (~> 3.0)
+  - Moya-ObjectMapper/RxSwift (2.5):
+    - Moya-ObjectMapper/Core
+    - Moya/RxSwift
+    - RxSwift (~> 4.0)
+  - Moya/Core (10.0.2):
+    - Alamofire (~> 4.1)
+    - Result (~> 3.0)
+  - Moya/RxSwift (10.0.2):
+    - Moya/Core
+    - RxSwift (~> 4.0)
+  - ObjectMapper (3.1.0)
+  - ReachabilitySwift (4.1.0)
+  - Realm (3.1.1):
+    - Realm/Headers (= 3.1.1)
+  - Realm/Headers (3.1.1)
+  - RealmSwift (3.1.1):
+    - Realm (= 3.1.1)
+  - Result (3.2.4)
+  - Reusable/View (4.0.0)
+  - RxCocoa (4.1.2):
+    - RxSwift (~> 4.0)
+  - RxDataSources (3.0.2):
+    - Differentiator (~> 3.0)
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxFlow (1.1.0):
+    - RxCocoa (>= 4.0.0)
+    - RxSwift (>= 4.0.0)
+  - RxOptional (3.3.0):
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxRealm (0.7.5):
+    - RealmSwift (~> 3.0)
+    - RxSwift (~> 4.0)
+  - RxSwift (4.1.2)
+  - RxSwiftExt (3.1.0):
+    - RxSwiftExt/Core (= 3.1.0)
+  - RxSwiftExt/Core (3.1.0):
+    - RxSwift (~> 4.0)
+  - SwiftDate (4.5.1)
+  - SwiftGen (5.2.1)
+
+DEPENDENCIES:
+  - Action
+  - ESTabBarController-swift
+  - FoldingCell
+  - Moya-ObjectMapper/RxSwift (from `https://github.com/dangthaison91/Moya-ObjectMapper`, branch `master`)
+  - Moya/RxSwift
+  - ObjectMapper
+  - ReachabilitySwift
+  - RealmSwift
+  - Reusable/View
+  - RxCocoa
+  - RxDataSources
+  - RxFlow
+  - RxOptional
+  - RxRealm
+  - RxSwift
+  - RxSwiftExt
+  - SwiftDate
+  - SwiftGen
+
+EXTERNAL SOURCES:
+  Moya-ObjectMapper:
+    :branch: master
+    :git: https://github.com/dangthaison91/Moya-ObjectMapper
+
+CHECKOUT OPTIONS:
+  Moya-ObjectMapper:
+    :commit: 601705aa822103c0db787c0638a4a3c928ad3c22
+    :git: https://github.com/dangthaison91/Moya-ObjectMapper
+
+SPEC CHECKSUMS:
+  Action: d60087ebce41b969d1afdad01e2fa1372a82f26e
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
+  ESTabBarController-swift: 8daa432f2a9be8ebd25101dc46c84472fd760512
+  FoldingCell: fb3e1ae5c220a7b108cf491b88d3349eb473c7d4
+  Moya: 2b0531a9fef318e0bc484030c3db1e6f279ccb66
+  Moya-ObjectMapper: 211a96a528f4e8f390030b700c3ef27ad2e2cf14
+  ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
+  ReachabilitySwift: 6849231cd4e06559f3b9ef4a97a0a0f96d41e09f
+  Realm: 42d1c38a5b1bbcc828b48a7ce702cb86fc68adf4
+  RealmSwift: d31937ca6a6ee54acde64ec839523c0a3c04924b
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  Reusable: 98e5fff1e0e2e00872199699b276dde08ee56c07
+  RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
+  RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
+  RxFlow: a15689752f0b8a97d903d8a425b217cefd887103
+  RxOptional: e5448d3e21024489e07c31f6a262f2b50c975367
+  RxRealm: a6c6c0a07cb61f34209969ca6657734edfdfff30
+  RxSwift: e49536837d9901277638493ea537394d4b55f570
+  RxSwiftExt: a9b9c8e94be009146707f9fcb16eaf3cc1f3910c
+  SwiftDate: 7b56d42a221f582047287deb256b23fc5ed49a60
+  SwiftGen: 444b4c467e512a4812b8a800d731643fd265139e
+
+PODFILE CHECKSUM: cd1d58952e9c38e7b049b4027c7308350462f46b
+
+COCOAPODS: 1.4.0

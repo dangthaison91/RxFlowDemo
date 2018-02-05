@@ -1,0 +1,19 @@
+
+input_dir: RxFlowDemo
+output_dir: RxFlowDemo/Resources/Generated/
+
+storyboards:
+  paths: Storyboards
+  templateName: swift4
+  output: Storyboards.swift
+
+# strings:
+#   paths: Resources/Base.lproj/Localizable.strings
+#   templateName: structured-swift4
+#   output: Resources/Generated/Strings.swift
+
+xcassets:
+  paths:
+   - Resources/Icons.xcassets
+  templateName: swift4
+  output: Assets.swift
