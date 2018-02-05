@@ -10,7 +10,6 @@ import RxCocoa
 import RxSwift
 import RxDataSources
 import RxFlow
-import ESTabBarController_swift
 import Reusable
 
 typealias ActivitySectionModel = AnimatableSectionModel<String, MedicationScheduleCellModel>
@@ -127,6 +126,6 @@ final class ActivityViewController: UIViewController, UITableViewDelegate, Stepp
 
 private extension ActivityViewController {
     func configureViews() {
-        tabBarItem = ESTabBarItem(TabbarIrregularityContentView(), title: "", image: Asset.fingerPrint.image, selectedImage: Asset.fingerPrint.image)
+        tabBarItem = UITabBarItem(title: "", image: Asset.fingerPrint.image, selectedImage: Asset.fingerPrint.image)
     }
 }

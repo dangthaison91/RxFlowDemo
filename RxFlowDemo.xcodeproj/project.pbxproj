@@ -20,7 +20,6 @@
 		AC6D0F09202862A3003DAC91 /* medicine1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC6D0EA5202862A2003DAC91 /* medicine1.jpg */; };
 		AC6D0F0A202862A3003DAC91 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC6D0EA6202862A2003DAC91 /* Icons.xcassets */; };
 		AC6D0F0B202862A3003DAC91 /* HomeFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D0EA9202862A2003DAC91 /* HomeFlow.swift */; };
-		AC6D0F0C202862A3003DAC91 /* LargeTabbarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D0EAA202862A2003DAC91 /* LargeTabbarItem.swift */; };
 		AC6D0F0D202862A3003DAC91 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D0EAB202862A2003DAC91 /* HomeViewController.swift */; };
 		AC6D0F0E202862A3003DAC91 /* ScheduleFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D0EAD202862A2003DAC91 /* ScheduleFlow.swift */; };
 		AC6D0F0F202862A3003DAC91 /* CreateScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D0EAF202862A2003DAC91 /* CreateScheduleViewModel.swift */; };
@@ -64,7 +63,6 @@
 		AC6D0EA5202862A2003DAC91 /* medicine1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = medicine1.jpg; sourceTree = "<group>"; };
 		AC6D0EA6202862A2003DAC91 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
 		AC6D0EA9202862A2003DAC91 /* HomeFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeFlow.swift; sourceTree = "<group>"; };
-		AC6D0EAA202862A2003DAC91 /* LargeTabbarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LargeTabbarItem.swift; sourceTree = "<group>"; };
 		AC6D0EAB202862A2003DAC91 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AC6D0EAD202862A2003DAC91 /* ScheduleFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleFlow.swift; sourceTree = "<group>"; };
 		AC6D0EAF202862A2003DAC91 /* CreateScheduleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateScheduleViewModel.swift; sourceTree = "<group>"; };
@@ -191,7 +189,6 @@
 			isa = PBXGroup;
 			children = (
 				AC6D0EA9202862A2003DAC91 /* HomeFlow.swift */,
-				AC6D0EAA202862A2003DAC91 /* LargeTabbarItem.swift */,
 				AC6D0EAB202862A2003DAC91 /* HomeViewController.swift */,
 			);
 			path = Home;
@@ -436,7 +433,6 @@
 				"${BUILT_PRODUCTS_DIR}/Action/Action.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
-				"${BUILT_PRODUCTS_DIR}/ESTabBarController-swift/ESTabBarController_swift.framework",
 				"${BUILT_PRODUCTS_DIR}/FoldingCell/FoldingCell.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya-ObjectMapper/Moya_ObjectMapper.framework",
@@ -460,7 +456,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Action.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESTabBarController_swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FoldingCell.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya_ObjectMapper.framework",
@@ -540,7 +535,6 @@
 				AC6D0F19202862A3003DAC91 /* AppDelegate.swift in Sources */,
 				AC6D0F03202862A3003DAC91 /* Schedule.swift in Sources */,
 				AC6D0F13202862A3003DAC91 /* ActivityViewModel.swift in Sources */,
-				AC6D0F0C202862A3003DAC91 /* LargeTabbarItem.swift in Sources */,
 				AC6D0F0B202862A3003DAC91 /* HomeFlow.swift in Sources */,
 				AC6D0F12202862A3003DAC91 /* ActivityViewController.swift in Sources */,
 				AC6D0F1F202862A3003DAC91 /* Shortcuts+Rx.swift in Sources */,

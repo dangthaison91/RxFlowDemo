@@ -27,7 +27,7 @@ def shared_pods
     pod 'RxOptional'
 
     #UI
-    pod "ESTabBarController-swift"
+    # pod "ESTabBarController-swift"
     # pod 'Eureka', :git => 'https://github.com/dangthaison91/Eureka.git', :branch => 'dangthaison91-master'
     # pod 'MaterialComponents/TextFields', :inhibit_warnings => true
     pod 'FoldingCell'

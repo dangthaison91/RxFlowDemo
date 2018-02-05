@@ -8,7 +8,6 @@
 import Foundation
 import RxSwift
 import RxFlow
-import ESTabBarController_swift
 
 enum HomeStep: Step {
     case initial, deeplink
@@ -35,7 +34,7 @@ class HomeFlow: Flow {
         let scheduleFlow = ScheduleFlow(navigationController: activityNaviController)
         
         let moreVC = UIViewController()
-        moreVC.tabBarItem = ESTabBarItem(title: "More", image: Asset.mailIcon.image, selectedImage: Asset.mailIcon.image)
+        moreVC.tabBarItem = UITabBarItem(title: "More", image: Asset.mailIcon.image, selectedImage: Asset.mailIcon.image)
 
         tabbarController?.setViewControllers([activityNaviController], animated: true)
         

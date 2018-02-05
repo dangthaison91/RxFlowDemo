@@ -6,10 +6,9 @@
 //
 
 import UIKit
-import ESTabBarController_swift
 import RxFlow
 
-class HomeViewController: ESTabBarController, Stepper {
+class HomeViewController: UITabBarController, Stepper {
 //    lazy var homeFlow: HomeFlow = HomeFlow(tabbarController: self)
     lazy var coordinator: Coordinator =  Coordinator()
     

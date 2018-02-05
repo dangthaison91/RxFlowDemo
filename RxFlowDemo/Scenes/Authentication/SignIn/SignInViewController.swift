@@ -8,7 +8,6 @@
 import UIKit
 import RxCocoa
 import RxSwift
-import ESTabBarController_swift
 
 protocol SignInViewModelType {
     var signInTrigger: PublishSubject<Void> { get }
@@ -27,7 +26,7 @@ class SignInViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        tabBarItem = ESTabBarItem(title: "Login", image: Asset.lockIcon.image, selectedImage: Asset.lockIcon.image)
+        tabBarItem = UITabBarItem(title: "Login", image: Asset.lockIcon.image, selectedImage: Asset.lockIcon.image)
 
         signInButton
             .rx.tap.asDriver()
