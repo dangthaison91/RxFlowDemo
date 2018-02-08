@@ -73,7 +73,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <exit id="QZz-3i-EtT" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-295" y="26"/>
+            <point key="canvasLocation" x="-527" y="-22"/>
         </scene>
         <!--Activity View Controller-->
         <scene sceneID="N6y-1X-LTU">
@@ -403,7 +403,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xk1-VL-Gbh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="397.60000000000002" y="25.637181409295355"/>
+            <point key="canvasLocation" x="142" y="-22"/>
         </scene>
     </scenes>
     <resources>

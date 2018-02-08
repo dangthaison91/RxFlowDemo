@@ -11,7 +11,7 @@ import RxSwift
 import RxRealm
 import RxFlow
 
-final class ActivityViewModel: Stepper {
+final class ActivityViewModel {
     
     var items: Driver<[ActivitySectionModel]> = Driver.just([])
     

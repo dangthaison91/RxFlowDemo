@@ -29,7 +29,6 @@ class HomeFlow: Flow {
         let signInFlow = SignInFlow(rootViewController: signInNaviController)
         
         let activityVC = StoryboardScene.Main.activityViewController.instantiate()
-        let activityViewModel = ActivityViewModel()
         let activityNaviController = UINavigationController(rootViewController: activityVC)
         let scheduleFlow = ScheduleFlow(navigationController: activityNaviController)
         

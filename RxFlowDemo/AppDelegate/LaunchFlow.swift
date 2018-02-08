@@ -37,11 +37,10 @@ class LaunchFlow: Flow {
     }
 
     private func navigateToHomeScreen() -> NextFlowItems {
-//        window.rootViewController = homeViewController
-//        return NextFlowItems.stepNotHandled
-//        root = homeViewController
         let homeFlow = HomeFlow(tabbarController: homeViewController)
-       let nextFlow = NextFlowItem(nextPresentable: homeFlow, nextStepper: homeViewController)
+        let nextFlow = NextFlowItem(nextPresentable: homeFlow, nextStepper: homeViewController)
+        self.window.rootViewController = homeViewController
+        self.window.makeKeyAndVisible()
         return NextFlowItems.one(flowItem: nextFlow)
     }
     
@@ -49,7 +48,9 @@ class LaunchFlow: Flow {
         let signInViewController = StoryboardScene.Main.signInViewController.instantiate()
         let viewModel = SignInViewModel()
         (root as? SignInViewController)?.viewModel = viewModel
-//        root = signInViewController
+        self.window.rootViewController = signInViewController
+        self.window.makeKeyAndVisible()
+
         return NextFlowItems.one(flowItem: NextFlowItem(nextPresentable: signInViewController, nextStepper: viewModel))
     }
     

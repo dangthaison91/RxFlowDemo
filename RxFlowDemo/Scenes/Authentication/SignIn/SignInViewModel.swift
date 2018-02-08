@@ -17,7 +17,7 @@ class SignInViewModel: SignInViewModelType, Stepper {
     private let disposeBag = DisposeBag()
     
     init() {
-        let signResult = signInTrigger
+        signInTrigger
             .subscribe(onNext: { [unowned self] in
                 self.step.accept(LaunchStep.home)
             })

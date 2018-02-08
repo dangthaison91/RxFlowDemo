@@ -21,10 +21,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        Flows.whenReady(flow1: rootFlow) { [unowned self] (viewController) in
-            self.window?.rootViewController = viewController
-            self.window?.makeKeyAndVisible()
-        }
+//        Flows.whenReady(flow1: rootFlow) { [unowned self] (viewController) in
+//            self.window?.rootViewController = viewController
+//            self.window?.makeKeyAndVisible()
+//        }
         coordinator.coordinate(flow: rootFlow, withStepper: viewModel)
         return true
     }
