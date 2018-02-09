@@ -15,9 +15,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let viewModel: AppDelegateViewModel = AppDelegateViewModel()
     var coordinator: Coordinator = Coordinator()
     
-    lazy var rootFlow: LaunchFlow = {
+    lazy var rootFlow: AppFlow = {
         guard let window = window else { fatalError("Cannot get window: UIWindow?") }
-        return LaunchFlow(window: window)
+        return AppFlow(window: window)
     }()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {

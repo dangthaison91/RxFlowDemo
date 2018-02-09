@@ -11,15 +11,15 @@ import RxSwift
 import RxRealm
 import RxFlow
 
-final class ActivityViewModel {
+final class SchedulesListViewModel {
     
-    var items: Driver<[ActivitySectionModel]> = Driver.just([])
+    var items: Driver<[ScheduleSectionModel]> = Driver.just([])
     
     init() {
         items = DataStore
             .observableObjects(type: Schedule.self)
             .map { schedules in schedules.map { MedicationScheduleCellModel(schedule: $0) } }
-            .map { [ActivitySectionModel(model: "", items: $0)] }
+            .map { [ScheduleSectionModel(model: "", items: $0)] }
             .asDriver(onErrorJustReturn: [])
         
     }

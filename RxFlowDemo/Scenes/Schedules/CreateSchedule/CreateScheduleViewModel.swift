@@ -32,14 +32,7 @@ class CreateScheduleViewModel: Stepper {
     
     init(id: String?) {
         self.id = id
-
-        createAction
-            .elements
-            .subscribeNext { [unowned self] in
-                self.step.accept(ScheduleStep.scheduleCreated)
-            }
-            .disposed(by: disposeBag)
-        
+       
     }
     
     private func createScheduleAction() -> Action<Void, Void> {

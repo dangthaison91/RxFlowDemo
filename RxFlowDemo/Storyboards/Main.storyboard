@@ -75,10 +75,10 @@
             </objects>
             <point key="canvasLocation" x="-527" y="-22"/>
         </scene>
-        <!--Activity View Controller-->
+        <!--Schedules List View Controller-->
         <scene sceneID="N6y-1X-LTU">
             <objects>
-                <viewController storyboardIdentifier="ActivityViewController" id="YCU-Yw-U4l" customClass="ActivityViewController" customModule="RxFlowDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SchedulesListViewController" id="YCU-Yw-U4l" customClass="SchedulesListViewController" customModule="RxFlowDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fnC-bj-21g">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

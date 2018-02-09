@@ -12,9 +12,9 @@ import RxDataSources
 import RxFlow
 import Reusable
 
-typealias ActivitySectionModel = AnimatableSectionModel<String, MedicationScheduleCellModel>
+typealias ScheduleSectionModel = AnimatableSectionModel<String, MedicationScheduleCellModel>
 
-final class ActivityViewController: UIViewController, UITableViewDelegate, Stepper {
+final class SchedulesListViewController: UIViewController, UITableViewDelegate, Stepper {
     
     let closeCellHeight: CGFloat = 120
     let openCellHeight: CGFloat = 464
@@ -22,9 +22,9 @@ final class ActivityViewController: UIViewController, UITableViewDelegate, Stepp
     
     // UI
     @IBOutlet weak var tableView: UITableView!
-    private var dataSource: RxTableViewSectionedAnimatedDataSource<ActivitySectionModel>!
+    private var dataSource: RxTableViewSectionedAnimatedDataSource<ScheduleSectionModel>!
     
-    var viewModel: ActivityViewModel! = ActivityViewModel()
+    var viewModel: SchedulesListViewModel! = SchedulesListViewModel()
     private let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
@@ -66,7 +66,7 @@ final class ActivityViewController: UIViewController, UITableViewDelegate, Stepp
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.backgroundColor = .white
 
-        let configureCell: TableViewSectionedDataSource<ActivitySectionModel>.ConfigureCell = { datasource, tableView, indexPath, model in
+        let configureCell: TableViewSectionedDataSource<ScheduleSectionModel>.ConfigureCell = { datasource, tableView, indexPath, model in
             let cell: MedicationScheduleCell = tableView.dequeueReusableCell(for: indexPath)
             
             let durations: [TimeInterval] = [0.3, 0.2, 0.2]
@@ -75,7 +75,7 @@ final class ActivityViewController: UIViewController, UITableViewDelegate, Stepp
             return cell
         }
         
-        dataSource = RxTableViewSectionedAnimatedDataSource<ActivitySectionModel>(configureCell: configureCell)
+        dataSource = RxTableViewSectionedAnimatedDataSource<ScheduleSectionModel>(configureCell: configureCell)
         
         viewModel
             .items
@@ -124,7 +124,7 @@ final class ActivityViewController: UIViewController, UITableViewDelegate, Stepp
     }
 }
 
-private extension ActivityViewController {
+private extension SchedulesListViewController {
     func configureViews() {
         tabBarItem = UITabBarItem(title: "", image: Asset.fingerPrint.image, selectedImage: Asset.fingerPrint.image)
     }

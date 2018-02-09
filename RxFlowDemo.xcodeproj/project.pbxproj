@@ -25,13 +25,13 @@
 		AC6D0F0F202862A3003DAC91 /* CreateScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D0EAF202862A2003DAC91 /* CreateScheduleViewModel.swift */; };
 		AC6D0F10202862A3003DAC91 /* CreateScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D0EB0202862A2003DAC91 /* CreateScheduleViewController.swift */; };
 		AC6D0F11202862A3003DAC91 /* MedicationScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D0EB3202862A2003DAC91 /* MedicationScheduleCell.swift */; };
-		AC6D0F12202862A3003DAC91 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D0EB4202862A2003DAC91 /* ActivityViewController.swift */; };
-		AC6D0F13202862A3003DAC91 /* ActivityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D0EB5202862A2003DAC91 /* ActivityViewModel.swift */; };
+		AC6D0F12202862A3003DAC91 /* SchedulesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D0EB4202862A2003DAC91 /* SchedulesListViewController.swift */; };
+		AC6D0F13202862A3003DAC91 /* SchedulesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D0EB5202862A2003DAC91 /* SchedulesListViewModel.swift */; };
 		AC6D0F16202862A3003DAC91 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D0EBB202862A2003DAC91 /* SignInViewController.swift */; };
-		AC6D0F17202862A3003DAC91 /* SignInFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D0EBC202862A2003DAC91 /* SignInFlow.swift */; };
+		AC6D0F17202862A3003DAC91 /* AuthenticationFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D0EBC202862A2003DAC91 /* AuthenticationFlow.swift */; };
 		AC6D0F18202862A3003DAC91 /* AppDelegateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D0EBE202862A2003DAC91 /* AppDelegateViewModel.swift */; };
 		AC6D0F19202862A3003DAC91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D0EBF202862A2003DAC91 /* AppDelegate.swift */; };
-		AC6D0F1A202862A3003DAC91 /* LaunchFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D0EC0202862A2003DAC91 /* LaunchFlow.swift */; };
+		AC6D0F1A202862A3003DAC91 /* AppFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D0EC0202862A2003DAC91 /* AppFlow.swift */; };
 		AC6D0F1B202862A3003DAC91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC6D0EC2202862A2003DAC91 /* LaunchScreen.storyboard */; };
 		AC6D0F1D202862A3003DAC91 /* Optional+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D0EC6202862A2003DAC91 /* Optional+Extension.swift */; };
 		AC6D0F1F202862A3003DAC91 /* Shortcuts+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D0EC9202862A2003DAC91 /* Shortcuts+Rx.swift */; };
@@ -43,6 +43,7 @@
 		AC6D0F4A2028654D003DAC91 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D0F492028654D003DAC91 /* SignInViewModel.swift */; };
 		AC6D0F502028696C003DAC91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC6D0EC3202862A2003DAC91 /* Main.storyboard */; };
 		AC6D0F52202869A0003DAC91 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6D0F51202869A0003DAC91 /* Storyboards.swift */; };
+		AC8BA05D202D488E00D83DF8 /* SignOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8BA05C202D488E00D83DF8 /* SignOutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,13 +69,13 @@
 		AC6D0EAF202862A2003DAC91 /* CreateScheduleViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateScheduleViewModel.swift; sourceTree = "<group>"; };
 		AC6D0EB0202862A2003DAC91 /* CreateScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateScheduleViewController.swift; sourceTree = "<group>"; };
 		AC6D0EB3202862A2003DAC91 /* MedicationScheduleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicationScheduleCell.swift; sourceTree = "<group>"; };
-		AC6D0EB4202862A2003DAC91 /* ActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
-		AC6D0EB5202862A2003DAC91 /* ActivityViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewModel.swift; sourceTree = "<group>"; };
+		AC6D0EB4202862A2003DAC91 /* SchedulesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchedulesListViewController.swift; sourceTree = "<group>"; };
+		AC6D0EB5202862A2003DAC91 /* SchedulesListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchedulesListViewModel.swift; sourceTree = "<group>"; };
 		AC6D0EBB202862A2003DAC91 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		AC6D0EBC202862A2003DAC91 /* SignInFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInFlow.swift; sourceTree = "<group>"; };
+		AC6D0EBC202862A2003DAC91 /* AuthenticationFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationFlow.swift; sourceTree = "<group>"; };
 		AC6D0EBE202862A2003DAC91 /* AppDelegateViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateViewModel.swift; sourceTree = "<group>"; };
 		AC6D0EBF202862A2003DAC91 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AC6D0EC0202862A2003DAC91 /* LaunchFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchFlow.swift; sourceTree = "<group>"; };
+		AC6D0EC0202862A2003DAC91 /* AppFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppFlow.swift; sourceTree = "<group>"; };
 		AC6D0EC2202862A2003DAC91 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC6D0EC3202862A2003DAC91 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		AC6D0EC6202862A2003DAC91 /* Optional+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional+Extension.swift"; sourceTree = "<group>"; };
@@ -86,6 +87,7 @@
 		AC6D0EFE202862A2003DAC91 /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		AC6D0F492028654D003DAC91 /* SignInViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		AC6D0F51202869A0003DAC91 /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
+		AC8BA05C202D488E00D83DF8 /* SignOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,49 +180,41 @@
 		AC6D0EA7202862A2003DAC91 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				AC6D0EA8202862A2003DAC91 /* Home */,
+				AC6D0EA9202862A2003DAC91 /* HomeFlow.swift */,
+				AC6D0EAB202862A2003DAC91 /* HomeViewController.swift */,
 				AC6D0EAC202862A2003DAC91 /* Schedules */,
 				AC6D0EB8202862A2003DAC91 /* Authentication */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
 		};
-		AC6D0EA8202862A2003DAC91 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				AC6D0EA9202862A2003DAC91 /* HomeFlow.swift */,
-				AC6D0EAB202862A2003DAC91 /* HomeViewController.swift */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
 		AC6D0EAC202862A2003DAC91 /* Schedules */ = {
 			isa = PBXGroup;
 			children = (
 				AC6D0EAD202862A2003DAC91 /* ScheduleFlow.swift */,
-				AC6D0EAE202862A2003DAC91 /* CreateMedicationSchedule */,
-				AC6D0EB1202862A2003DAC91 /* ActivityViewController */,
+				AC6D0EAE202862A2003DAC91 /* CreateSchedule */,
+				AC6D0EB1202862A2003DAC91 /* SchedulesList */,
 			);
 			path = Schedules;
 			sourceTree = "<group>";
 		};
-		AC6D0EAE202862A2003DAC91 /* CreateMedicationSchedule */ = {
+		AC6D0EAE202862A2003DAC91 /* CreateSchedule */ = {
 			isa = PBXGroup;
 			children = (
 				AC6D0EAF202862A2003DAC91 /* CreateScheduleViewModel.swift */,
 				AC6D0EB0202862A2003DAC91 /* CreateScheduleViewController.swift */,
 			);
-			path = CreateMedicationSchedule;
+			path = CreateSchedule;
 			sourceTree = "<group>";
 		};
-		AC6D0EB1202862A2003DAC91 /* ActivityViewController */ = {
+		AC6D0EB1202862A2003DAC91 /* SchedulesList */ = {
 			isa = PBXGroup;
 			children = (
 				AC6D0EB2202862A2003DAC91 /* Cells */,
-				AC6D0EB4202862A2003DAC91 /* ActivityViewController.swift */,
-				AC6D0EB5202862A2003DAC91 /* ActivityViewModel.swift */,
+				AC6D0EB4202862A2003DAC91 /* SchedulesListViewController.swift */,
+				AC6D0EB5202862A2003DAC91 /* SchedulesListViewModel.swift */,
 			);
-			path = ActivityViewController;
+			path = SchedulesList;
 			sourceTree = "<group>";
 		};
 		AC6D0EB2202862A2003DAC91 /* Cells */ = {
@@ -234,8 +228,9 @@
 		AC6D0EB8202862A2003DAC91 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				AC6D0EBC202862A2003DAC91 /* AuthenticationFlow.swift */,
 				AC6D0EB9202862A2003DAC91 /* SignIn */,
-				AC6D0EBC202862A2003DAC91 /* SignInFlow.swift */,
+				AC8BA05B202D486B00D83DF8 /* SignOut */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -254,7 +249,7 @@
 			children = (
 				AC6D0EBE202862A2003DAC91 /* AppDelegateViewModel.swift */,
 				AC6D0EBF202862A2003DAC91 /* AppDelegate.swift */,
-				AC6D0EC0202862A2003DAC91 /* LaunchFlow.swift */,
+				AC6D0EC0202862A2003DAC91 /* AppFlow.swift */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -319,6 +314,14 @@
 				AC6D0EFE202862A2003DAC91 /* DataStore.swift */,
 			);
 			path = DataStore;
+			sourceTree = "<group>";
+		};
+		AC8BA05B202D486B00D83DF8 /* SignOut */ = {
+			isa = PBXGroup;
+			children = (
+				AC8BA05C202D488E00D83DF8 /* SignOutViewController.swift */,
+			);
+			path = SignOut;
 			sourceTree = "<group>";
 		};
 		FA9F8244FFE8B6C4DCB24FD4 /* Pods */ = {
@@ -526,17 +529,18 @@
 				AC6D0F21202862A3003DAC91 /* Errors+Rx.swift in Sources */,
 				AC6D0F00202862A3003DAC91 /* Dosage.swift in Sources */,
 				AC6D0F0F202862A3003DAC91 /* CreateScheduleViewModel.swift in Sources */,
-				AC6D0F17202862A3003DAC91 /* SignInFlow.swift in Sources */,
+				AC6D0F17202862A3003DAC91 /* AuthenticationFlow.swift in Sources */,
 				AC6D0F02202862A3003DAC91 /* Medication.swift in Sources */,
-				AC6D0F1A202862A3003DAC91 /* LaunchFlow.swift in Sources */,
+				AC6D0F1A202862A3003DAC91 /* AppFlow.swift in Sources */,
 				AC6D0F1D202862A3003DAC91 /* Optional+Extension.swift in Sources */,
 				AC6D0F4A2028654D003DAC91 /* SignInViewModel.swift in Sources */,
 				AC6D0F11202862A3003DAC91 /* MedicationScheduleCell.swift in Sources */,
 				AC6D0F19202862A3003DAC91 /* AppDelegate.swift in Sources */,
 				AC6D0F03202862A3003DAC91 /* Schedule.swift in Sources */,
-				AC6D0F13202862A3003DAC91 /* ActivityViewModel.swift in Sources */,
+				AC6D0F13202862A3003DAC91 /* SchedulesListViewModel.swift in Sources */,
 				AC6D0F0B202862A3003DAC91 /* HomeFlow.swift in Sources */,
-				AC6D0F12202862A3003DAC91 /* ActivityViewController.swift in Sources */,
+				AC6D0F12202862A3003DAC91 /* SchedulesListViewController.swift in Sources */,
+				AC8BA05D202D488E00D83DF8 /* SignOutViewController.swift in Sources */,
 				AC6D0F1F202862A3003DAC91 /* Shortcuts+Rx.swift in Sources */,
 				AC6D0F04202862A3003DAC91 /* ScheduleTimeRecord.swift in Sources */,
 				AC6D0F18202862A3003DAC91 /* AppDelegateViewModel.swift in Sources */,

@@ -61,9 +61,11 @@ enum StoryboardScene {
   enum Main: StoryboardType {
     static let storyboardName = "Main"
 
-    static let activityViewController = SceneType<RxFlowDemo.ActivityViewController>(storyboard: Main.self, identifier: "ActivityViewController")
+    static let schedulesListViewController = SceneType<RxFlowDemo.SchedulesListViewController>(storyboard: Main.self, identifier: "SchedulesListViewController")
 
     static let signInViewController = SceneType<RxFlowDemo.SignInViewController>(storyboard: Main.self, identifier: "SignInViewController")
+
+    static let signOutViewController = SceneType<RxFlowDemo.SignOutViewController>(storyboard: Main.self, identifier: "SignOutViewController")
   }
 }
 

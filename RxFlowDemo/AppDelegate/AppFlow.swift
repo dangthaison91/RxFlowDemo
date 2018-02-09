@@ -1,5 +1,5 @@
 //
-//  LaunchFlow.swift
+//  AppFlow.swift
 //  RxFlowDemo
 //
 //  Created by dangthaison on 1/3/18.
@@ -8,11 +8,11 @@
 import Foundation
 import RxFlow
 
-enum LaunchStep: Step {
-    case onboarding, signin, home
+enum AppStep: Step {
+    case onboarding, home, signIn,  signOut
 }
 
-class LaunchFlow: Flow {
+class AppFlow: Flow {
     let window: UIWindow
     
     let homeViewController = HomeViewController()
@@ -24,12 +24,12 @@ class LaunchFlow: Flow {
     }
     
     func navigate(to step: Step) -> NextFlowItems {
-        guard let step = step as? LaunchStep else { return NextFlowItems.stepNotHandled }
+        guard let step = step as? AppStep else { return NextFlowItems.stepNotHandled }
         switch step {
             
         case .onboarding:
             return navigateToOnboardingScreen()
-        case .signin:
+        case .signIn, .signOut:
             return navigateToLoginScreen()
         case .home:
             return navigateToHomeScreen()
@@ -38,7 +38,8 @@ class LaunchFlow: Flow {
 
     private func navigateToHomeScreen() -> NextFlowItems {
         let homeFlow = HomeFlow(tabbarController: homeViewController)
-        let nextFlow = NextFlowItem(nextPresentable: homeFlow, nextStepper: homeViewController)
+        let nextFlow = NextFlowItem(nextPresentable: homeFlow, nextStepper: homeFlow)
+        
         self.window.rootViewController = homeViewController
         self.window.makeKeyAndVisible()
         return NextFlowItems.one(flowItem: nextFlow)
@@ -46,15 +47,20 @@ class LaunchFlow: Flow {
     
     private func navigateToLoginScreen() -> NextFlowItems {
         let signInViewController = StoryboardScene.Main.signInViewController.instantiate()
-        let viewModel = SignInViewModel()
-        (root as? SignInViewController)?.viewModel = viewModel
-        self.window.rootViewController = signInViewController
+        let signInNaviController = UINavigationController(rootViewController: signInViewController)
+        signInViewController.viewModel = SignInViewModel()
+
+        let authenFlow = AuthenticationFlow(rootViewController: signInNaviController)
+        
+        self.window.rootViewController = signInNaviController
         self.window.makeKeyAndVisible()
 
-        return NextFlowItems.one(flowItem: NextFlowItem(nextPresentable: signInViewController, nextStepper: viewModel))
+        let authenFlowItem = NextFlowItem(nextPresentable: signInNaviController, nextStepper: authenFlow)
+        return NextFlowItems.one(flowItem: authenFlowItem)
     }
     
     private func navigateToOnboardingScreen() -> NextFlowItems {
         return NextFlowItems.stepNotHandled
     }
+    
 }

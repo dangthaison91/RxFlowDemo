@@ -8,15 +8,14 @@
 import Foundation
 import RxFlow
 
-class SignInFlow: Flow {
-    func navigate(to step: Step) -> NextFlowItems {
-        return NextFlowItems.stepNotHandled
-    }
-    
+class AuthenticationFlow: Flow, Stepper {
     var root: UIViewController
     
     init(rootViewController: UIViewController) {
         self.root = rootViewController
+    }
+    func navigate(to step: Step) -> NextFlowItems {
+        return NextFlowItems.stepNotHandled
     }
     
 }

@@ -19,7 +19,7 @@ class SignInViewModel: SignInViewModelType, Stepper {
     init() {
         signInTrigger
             .subscribe(onNext: { [unowned self] in
-                self.step.accept(LaunchStep.home)
+                self.step.accept(AppStep.home)
             })
             .disposed(by: disposeBag)
     }

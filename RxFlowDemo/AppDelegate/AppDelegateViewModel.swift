@@ -27,9 +27,9 @@ class AppDelegateViewModel: Stepper {
         self.component = component
         
         if component.userDefault.userLoggedIn {
-            step.accept(LaunchStep.signin)
+            step.accept(AppStep.signIn)
         } else {
-            step.accept(LaunchStep.home)
+            step.accept(AppStep.home)
         }
     }
 }
