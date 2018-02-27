@@ -38,7 +38,7 @@ class AppFlow: Flow {
 
     private func navigateToHomeScreen() -> NextFlowItems {
         let homeFlow = HomeFlow(tabbarController: homeViewController)
-        let nextFlow = NextFlowItem(nextPresentable: homeFlow, nextStepper: homeFlow)
+        let nextFlow = NextFlowItem(nextPresentable: homeFlow, nextStepper: homeViewController)
         
         self.window.rootViewController = homeViewController
         self.window.makeKeyAndVisible()
@@ -55,7 +55,7 @@ class AppFlow: Flow {
         self.window.rootViewController = signInNaviController
         self.window.makeKeyAndVisible()
 
-        let authenFlowItem = NextFlowItem(nextPresentable: signInNaviController, nextStepper: authenFlow)
+        let authenFlowItem = NextFlowItem(nextPresentable: signInNaviController, nextStepper: OneStepper(withSingleStep: NoStep()))
         return NextFlowItems.one(flowItem: authenFlowItem)
     }
     
@@ -63,4 +63,7 @@ class AppFlow: Flow {
         return NextFlowItems.stepNotHandled
     }
     
+}
+
+struct NoStep: Step {
 }

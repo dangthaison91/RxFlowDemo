@@ -13,14 +13,13 @@ enum HomeStep: Step {
     case initial, deeplink
 }
 
-class HomeFlow: Flow, Stepper {
+class HomeFlow: Flow {
     var root: UIViewController { return tabbarController! }
     
     private weak var tabbarController: UITabBarController?
     
     init(tabbarController: UITabBarController) {
         self.tabbarController = tabbarController
-        step.accept(HomeStep.initial)
     }
     
     func navigate(to step: Step) -> NextFlowItems {

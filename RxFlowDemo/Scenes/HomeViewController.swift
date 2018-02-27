@@ -8,9 +8,11 @@
 import UIKit
 import RxFlow
 
-class HomeViewController: UITabBarController {
+class HomeViewController: UITabBarController, Stepper {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        step.accept(HomeStep.initial)
+
     }
 }

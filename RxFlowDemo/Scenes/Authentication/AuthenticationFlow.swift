@@ -8,7 +8,7 @@
 import Foundation
 import RxFlow
 
-class AuthenticationFlow: Flow, Stepper {
+class AuthenticationFlow: Flow {
     var root: UIViewController
     
     init(rootViewController: UIViewController) {

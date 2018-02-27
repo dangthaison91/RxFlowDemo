@@ -405,6 +405,41 @@
             </objects>
             <point key="canvasLocation" x="142" y="-22"/>
         </scene>
+        <!--Sign Out View Controller-->
+        <scene sceneID="XXp-lK-lJA">
+            <objects>
+                <viewController storyboardIdentifier="SignOutViewController" id="Wcx-go-zIP" customClass="SignOutViewController" customModule="RxFlowDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XRq-bt-aV2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PkA-MY-XZ5">
+                                <rect key="frame" x="127.5" y="311.5" width="120" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="2pD-EX-F7V"/>
+                                    <constraint firstAttribute="height" constant="44" id="c3Y-ib-wVW"/>
+                                </constraints>
+                                <state key="normal" title="Sign out">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PkA-MY-XZ5" firstAttribute="centerX" secondItem="XRq-bt-aV2" secondAttribute="centerX" id="WcS-4V-ACk"/>
+                            <constraint firstItem="PkA-MY-XZ5" firstAttribute="centerY" secondItem="XRq-bt-aV2" secondAttribute="centerY" id="uhQ-NK-9OC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mgd-CA-G53"/>
+                    </view>
+                    <connections>
+                        <outlet property="signOutButton" destination="PkA-MY-XZ5" id="Z70-Ke-aWk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kPa-vK-3Xg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="836" y="-22.03898050974513"/>
+        </scene>
     </scenes>
     <resources>
         <image name="medicine2.jpg" width="698" height="400"/>
